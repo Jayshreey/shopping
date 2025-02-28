@@ -13,18 +13,21 @@
 
     <div class="row-fluid sortable">		
         <div class="box span12">
-            <div class="box-header" data-original-title>
+            <!-- <div class="box-header" data-original-title>
                 <h2><i class="halflings-icon user"></i><span class="break"></span>Manage Category</h2>
                 <div class="box-icon">
                     <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
                     <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
                     <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
                 </div>
-            </div>
+            </div> -->
             <style type="text/css">
                 #result{color:red;padding:5px}
                 #result p{color:red}
             </style>
+             <a class="btn btn-primary" href="<?php echo base_url('add/category'); ?>">
+                Add catergory
+            </a>
             <div id="result">
                 <p><?php echo $this->session->flashdata('message'); ?></p>
             </div>

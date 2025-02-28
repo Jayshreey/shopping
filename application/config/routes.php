@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 //Front End Route
 $route['default_controller']   = 'web';
-$route['404_override']         = 'web/error';
+$route['404_override']         = 'admin/error';
 $route['translate_uri_dashes'] = false;
 
 //Web Route

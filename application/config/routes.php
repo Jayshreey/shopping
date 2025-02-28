@@ -6,6 +6,8 @@ $route['default_controller']   = 'web';
 $route['404_override']         = 'web/error';
 $route['translate_uri_dashes'] = false;
 
+
+
 //Web Route
 
 $route['product']             = 'web/product';

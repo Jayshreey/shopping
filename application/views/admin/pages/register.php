@@ -19,6 +19,8 @@
         <link href="<?php echo base_url()?>assets/admin/css/bootstrap-responsive.min.css" rel="stylesheet">
         <link id="base-style" href="<?php echo base_url()?>assets/admin/css/style.css" rel="stylesheet">
         <link id="base-style-responsive" href="<?php echo base_url()?>assets/admin/css/style-responsive.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
         <!-- end: CSS -->
 
@@ -50,12 +52,47 @@
             <div class="row-fluid">
 
                 <div class="row-fluid">
-                    <div class="login-box">
-                        <div class="icons">
+                    <div class="login-box" style="padding:40px">
+					<?php /*<div class="container">
+  <h2>Registration Form</h2>
+  <form action="<?php echo base_url().'index.php/Registration/user_info'; ?>" method="POST">
+    <div class="form-group">
+      <!--<label for="name">Full Name:</label>-->
+      <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User Name" required>
+    </div>
+
+    <div class="form-group">
+      <!--<label for="email">Email:</label>-->
+      <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+     <!-- <label for="password">Password:</label>-->
+      <input type="password" class="form-control" id="user_password" name="user_password" placeholder="Enter password" required>
+    </div>
+
+    <div class="form-group">
+      <!--<label for="confirm_password">Confirm Password:</label>-->
+      <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password" required>
+    </div>
+
+    <div class="form-group">
+      <!--<label for="gender">user Role</label>-->
+      <select name="user_role" placeholder="User Role">
+                                    <option value="1">Account</option>
+                                    <option value="2">Sales</option>
+									<option value="3">Packaging</option>
+                                </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div> */ ?>
+                       <div class="icons">
                             <a href="<?php echo base_url('dashboard');?>"><i class="halflings-icon home"></i></a>
                             <a href="#"><i class="halflings-icon cog"></i></a>
                         </div>
-                        <h1 class="text-center">Admin Panel</h1>
+                        <h1 class="text-center">Registration</h1>
                         <style type="text/css">
                             #result{color:red}
                             #result p{color:red}
@@ -63,28 +100,46 @@
                         <div id="result">
                             <p><?php echo $this->session->flashdata('message');?></p>
                         </div>
-                        <form id="adminlogincheck" class="form-horizontal" action="<?php echo base_url()?>admin_login_check" method="post">
+                        <form id="adminlogincheck" class="form-horizontal" action="<?php echo base_url().'index.php/Registration/user_info'; ?>" method="post">
                             <fieldset>
-
+								<div class="input-prepend" title="User Name">
+                                    <span class="add-on"><i class="halflings-icon user"></i></span>
+                                    <input class="input-large span10" value="<?php set_value('user_name');?>" name="user_name" id="user_name" type="text" placeholder="User Name" required/>
+                                </div>
+                                <div class="clearfix"></div>
+								
                                 <div class="input-prepend" title="User Email">
                                     <span class="add-on"><i class="halflings-icon user"></i></span>
-                                    <input class="input-large span10" value="<?php set_value('user_name');?>" name="user_email" id="user_email" type="text" placeholder="Email"/>
+                                    <input class="input-large span10" value="<?php set_value('user_name');?>" name="user_email" id="user_email" type="text" placeholder="Email" required/>
                                 </div>
                                 <div class="clearfix"></div>
 
                                 <div class="input-prepend" title="User Password">
                                     <span class="add-on"><i class="halflings-icon lock"></i></span>
-                                    <input class="input-large span10" name="user_password" id="user_password" type="password" placeholder="Password"/>
+                                    <input class="input-large span10" name="user_password" id="user_password" type="password" placeholder="Password" required/>
                                 </div>
+								<div class="clearfix"></div>
+								<div class="input-prepend" title="ReEnter Password">
+                                    <span class="add-on"><i class="halflings-icon lock"></i></span>
+                                    <input class="input-large span10" name="confirm_password" id="confirm_password" type="password" placeholder="confirm_password" required/>
+                                </div>
+								<div class="clearfix"></div>
+								
+								
+                            <div class="input-prepend" >
+							<span class="add-on"><i class="bi bi-people-fill"></i></span>
+                                <select name="user_role" placeholder="User Role" >
+                                    <option value="1">Account</option>
+                                    <option value="2">Sales</option>
+									<option value="3">Packaging</option>
+                                </select>
+            
+                        </div>
                                 <div class="clearfix"></div>
-
-                                <label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
-							<div class="button-login">	
-								<a href="<?php echo base_url().'index.php/Registration/register'; ?>">Register</a>
-                                </div>
+								
 								
                                 <div class="button-login">	
-                                    <button type="submit" class="btn btn-primary adminlogincheck" >Admin Login</button>
+                                    <button type="submit" class="btn btn-primary adminlogincheck" >Register</button>
                                 </div>
                                 <div class="clearfix"></div>
 								

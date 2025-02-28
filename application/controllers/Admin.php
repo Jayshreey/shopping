@@ -42,5 +42,12 @@ class Admin extends CI_Controller
         }
 
     }
+    public function error()
+    {
+        $data = array();
+        $data['maincontent']  = $this->load->view('admin/pages/error', $data, true);
+        $this->load->view('admin/master', $data);
+       
+    }
 
 }

@@ -338,7 +338,7 @@ h6 {
 	min-height: 40px;
 	padding-right: 20px;
 	padding-left: 20px;
-	background: #080808;
+	background: #0a0c0e;
 	filter: none;
 	text-shadow: 1px 1px 1px #0a0c0e;
 	border: none;
@@ -491,8 +491,10 @@ a.brand span {
 
 .nav-tabs.nav-stacked > li.active > a,
 .nav-tabs.nav-stacked > li > ul > li.active > a {
-	background: #2d89ef;
-	border-bottom: 1px solid #2d89ef;
+	/* background: #2d89ef;
+	border-bottom: 1px solid #2d89ef; */
+	background: #800000;
+	border-color: #330707;
 }
 
 .nav-tabs.nav-stacked > li.active > a:hover,
@@ -1679,15 +1681,15 @@ fieldset[disabled] .btn:active {
 }
 
 .btn-primary {
-	background-color: #2d89ef;
-	border-color: #2d89ef;
+	background-color: #800000;
+	border-color: #330707;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	background-color: #357ebd;
-	border-color: #3071a9;
+	background-color: #330707;
+	border-color: #800000;
 }
 
 .btn-primary.disabled:hover,

@@ -89,3 +89,6 @@ $route['unpublished/slider/(:num)'] = 'slider/unpublished_slider/$1';
 //Theme Option  Route List
 $route['theme/option'] = 'themeoption';
 $route['save/option']  = 'themeoption/save_option';
+//API - 28-02-2025
+$route['login'] = 'Api/Authentication/login';
+$route['reGenToken'] = 'api/Token/reGenToken';

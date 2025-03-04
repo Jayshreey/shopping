@@ -338,7 +338,7 @@ h6 {
 	min-height: 40px;
 	padding-right: 20px;
 	padding-left: 20px;
-	background: #080808;
+	background: #0a0c0e;
 	filter: none;
 	text-shadow: 1px 1px 1px #0a0c0e;
 	border: none;
@@ -491,8 +491,10 @@ a.brand span {
 
 .nav-tabs.nav-stacked > li.active > a,
 .nav-tabs.nav-stacked > li > ul > li.active > a {
-	background: #2d89ef;
-	border-bottom: 1px solid #2d89ef;
+	/* background: #2d89ef;
+	border-bottom: 1px solid #2d89ef; */
+	background: #800000;
+	border-color: #330707;
 }
 
 .nav-tabs.nav-stacked > li.active > a:hover,
@@ -1679,15 +1681,15 @@ fieldset[disabled] .btn:active {
 }
 
 .btn-primary {
-	background-color: #2d89ef;
-	border-color: #2d89ef;
+	background-color: #800000;
+	border-color: #330707;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	background-color: #357ebd;
-	border-color: #3071a9;
+	background-color: #330707;
+	border-color: #800000;
 }
 
 .btn-primary.disabled:hover,
@@ -2106,6 +2108,7 @@ fieldset[disabled] .btn-link:focus {
 	box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.15);
 }
 
+
 .login-box .icons {
 	text-align: right;
 	margin: 20px 15px;
@@ -2193,6 +2196,16 @@ fieldset[disabled] .btn-link:focus {
 	margin-right: 20px;
 	float: right;
 }
+
+.login-box .button-register {
+	margin-top: 20px;
+	margin-right: 20px;
+	text-align:center;
+}
+.user-role{
+    width:345px;
+}
+
 
 /* UI - Uniform
 =================================================================== */
@@ -2801,6 +2814,10 @@ ul.messagesList li span.date {
 	font-size: 12px;
 }
 
+.reg_input
+{
+	float:left;
+}
 .message .attachments ul {
 	list-style: none;
 	margin: 0;
@@ -3059,4 +3076,5 @@ ul.messagesList li span.date {
 		background: url(../img/chat-right-metro@2x.png) no-repeat 0px 0px;
 		background-size: 100%;
 	}
+	
 }

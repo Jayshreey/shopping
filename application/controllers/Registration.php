@@ -13,14 +13,21 @@ class Registration extends CI_Controller {
 
     // Registration page
     public function register() {
-				$this->load->view('admin/pages/register');
+				$data['cities_list']   = $this->Registration_model->get_cities_list();
+				$data['state_list']   = $this->Registration_model->get_state_list();
+				$data['country_list']   = $this->Registration_model->get_countries_list();
+				$this->load->view('admin/pages/register',$data);
 	}
 	public function user_info() {
+		//$data['cities_list']   = $this->Registration_model->get_cities_list();
 				$registration_data_post=$this->input->post();
 				//print_r($registration_data_post);die();
+				 
 				$user_id=$data_insert_id=$data=$this->Registration_model->insert_user($registration_data_post);
+				
 				 redirect('admin');
 	}
+	
 	
     // Handle registration form submission
     public function register_action() {

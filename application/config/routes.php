@@ -88,6 +88,9 @@ $route['update/slider/(:num)']      = 'slider/update_slider/$1';
 $route['published/slider/(:num)']   = 'slider/published_slider/$1';
 $route['unpublished/slider/(:num)'] = 'slider/unpublished_slider/$1';
 
+//Bank details Route list
+$route['manage/bank_details']			= 'Bankdetails/account_info';
+
 //Theme Option  Route List
 $route['theme/option'] = 'themeoption';
 $route['save/option']  = 'themeoption/save_option';

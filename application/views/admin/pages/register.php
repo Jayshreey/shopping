@@ -1,163 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/registrations/registration-6/assets/css/registration-6.css">
+<!-- Registration 6 - Bootstrap Brain Component -->
 
-        <!-- start: Meta -->
-        <meta charset="utf-8">
-        <title>E-Shop Login Panel</title>
-        <meta name="description" content="E-Shop Login Panel">
-        <meta name="author" content="Rostom Ali">
-        <meta name="keyword" content="E-Shop Login Panel">
-        <!-- end: Meta -->
-
-        <!-- start: Mobile Specific -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- end: Mobile Specific -->
-
-        <!-- start: CSS -->
-        <link id="bootstrap-style" href="<?php echo base_url()?>assets/admin/css/bootstrap.min.css" rel="stylesheet">
-        <link href="<?php echo base_url()?>assets/admin/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link id="base-style" href="<?php echo base_url()?>assets/admin/css/style.css" rel="stylesheet">
-        <link id="base-style-responsive" href="<?php echo base_url()?>assets/admin/css/style-responsive.css" rel="stylesheet">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
-        <!-- end: CSS -->
-
-
-        <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-                <link id="ie-style" href="<?php echo base_url()?>assets/admin/css/ie.css" rel="stylesheet">
-        <![endif]-->
-
-        <!--[if IE 9]>
-                <link id="ie9style" href="<?php echo base_url()?>assets/admin/css/ie9.css" rel="stylesheet">
-        <![endif]-->
-
-        <!-- start: Favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url()?>assets/admin/img/favicon.jpg">
-        <!-- end: Favicon -->
-
-        <style type="text/css">
-            body { background: url(<?php echo base_url()?>assets/admin/img/bg-login.jpg) !important; }
-        </style>
-
-
-
-    </head>
-
-    <body>
-        <div class="container-fluid-full">
-            <div class="row-fluid">
-
-                <div class="row-fluid">
-                    <div class="login-box" style="padding:40px">
-					<?php /*<div class="container">
-  <h2>Registration Form</h2>
-  <form action="<?php echo base_url().'index.php/Registration/user_info'; ?>" method="POST">
-    <div class="form-group">
-      <!--<label for="name">Full Name:</label>-->
-      <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User Name" required>
-    </div>
-
-    <div class="form-group">
-      <!--<label for="email">Email:</label>-->
-      <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Enter email" required>
-    </div>
-
-    <div class="form-group">
-     <!-- <label for="password">Password:</label>-->
-      <input type="password" class="form-control" id="user_password" name="user_password" placeholder="Enter password" required>
-    </div>
-
-    <div class="form-group">
-      <!--<label for="confirm_password">Confirm Password:</label>-->
-      <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password" required>
-    </div>
-
-    <div class="form-group">
-      <!--<label for="gender">user Role</label>-->
-      <select name="user_role" placeholder="User Role">
+<section class=" p-3 p-md-4 p-xl-5" style="background-color:rosybrown">
+  <div class="container">
+    <div class="row justify-content-center" style="background-color:rosybrown">
+      <div class="col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+        <div class="card border-0 shadow-sm rounded-4">
+          <div class="card-body p-3 p-md-4 p-xl-5">
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-5">
+                  <h2 class="h3">Registration</h2>
+                  <h3 class="fs-6 fw-normal text-secondary m-0">Enter your details to register</h3>
+                </div>
+              </div>
+            </div>
+            <form id="adminlogincheck" class="form-horizontal" action="<?php echo base_url().'index.php/Registration/user_info'; ?>" method="post">
+              <div class="row gy-3 overflow-hidden">
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="user_name" id="user_name" placeholder="user_name" required>
+                    <label for="firstName" class="form-label">Name</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" name="user_email" id="user_email" placeholder="Email" required>
+                    <label for="email" class="form-label">Email</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" name="user_password" id="user_password" value="" placeholder="Password" required>
+                    <label for="password" class="form-label">Password</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" name="confirm_password" id="confirm_password" value="" placeholder="Password" required>
+                    <label for="password" class="form-label">Confirm Password</label>
+                  </div>
+                </div>
+				<div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="mobileno" id="mobileno" minlength="10" maxlength="10" value="" placeholder="Mobile No" required>
+                    <label for="password" class="form-label">Contact No</label>
+                  </div>
+                </div>
+				<div class="col-12">
+                  <div class="form-floating mb-3">
+                   <select class="col-12" name="user_role" placeholder="User Role" class="user-role">
+									<option>Select User role</option>
                                     <option value="1">Account</option>
                                     <option value="2">Sales</option>
 									<option value="3">Packaging</option>
-                                </select>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div> */ ?>
-                       <div class="icons">
-                            <a href="<?php echo base_url('dashboard');?>"><i class="halflings-icon home"></i></a>
-                            <a href="#"><i class="halflings-icon cog"></i></a>
-                        </div>
-                        <h1 class="text-center">Registration</h1>
-                        <style type="text/css">
-                            #result{color:red}
-                            #result p{color:red}
-                        </style>
-                        <div id="result">
-                            <p><?php echo $this->session->flashdata('message');?></p>
-                        </div>
-                        <form id="adminlogincheck" class="form-horizontal" action="<?php echo base_url().'index.php/Registration/user_info'; ?>" method="post">
-                            <fieldset>
-								<div class="input-prepend" title="User Name">
-                                    <span class="add-on"><i class="halflings-icon user"></i></span>
-                                    <input class="input-large span10" value="<?php set_value('user_name');?>" name="user_name" id="user_name" type="text" placeholder="User Name" required/>
-                                </div>
-                                <div class="clearfix"></div>
-								
-                                <div class="input-prepend" title="User Email">
-                                    <span class="add-on"><i class="halflings-icon user"></i></span>
-                                    <input class="input-large span10" value="<?php set_value('user_name');?>" name="user_email" id="user_email" type="text" placeholder="Email" required/>
-                                </div>
-                                <div class="clearfix"></div>
-
-                                <div class="input-prepend" title="User Password">
-                                    <span class="add-on"><i class="halflings-icon lock"></i></span>
-                                    <input class="input-large span10" name="user_password" id="user_password" type="password" placeholder="Password" required/>
-                                </div>
-								<div class="clearfix"></div>
-								<div class="input-prepend" title="ReEnter Password">
-                                    <span class="add-on"><i class="halflings-icon lock"></i></span>
-                                    <input class="input-large span10" name="confirm_password" id="confirm_password" type="password" placeholder="confirm_password" required/>
-                                </div>
-								<div class="clearfix"></div>
-								
-								
-                            <div class="input-prepend" >
-							<span class="add-on"><i class="bi bi-people-fill"></i></span>
-                                <select name="user_role" placeholder="User Role" >
-                                    <option value="1">Account</option>
-                                    <option value="2">Sales</option>
-									<option value="3">Packaging</option>
-                                </select>
+                    </select>
+                  </div>
+                </div>
+		
+				<div class="col-12">
+                  <div class="form-floating mb-3">
+                    <select class="col-12" id="city" name="city" required>
+												<option value="">Assigned City</option>
+												<?php foreach ($cities_list as $cit) : ?>
+													<option value="<?php echo $cit->id; ?>"><?php echo $cit->city; ?></option>
+												<?php endforeach; ?>
+											</select>
+                  </div>
+                </div>
+				<!--<div class="col-6">
+                  <div class="form-floating mb-3">
+                   <select class="js-example-basic-single company_element" id="state" name="state" required>
+												<option value="">State</option>
+												<?php foreach ($state_list as $state) : ?>
+													<option value="<?php echo $state->id; ?>"><?php echo $state->name; ?></option>
+												<?php endforeach; ?>
+											</select>
+                  </div>
+                </div>
+				<div class="col-12">
+                  <div class="form-floating mb-3">
+                   <select class="js-example-basic-single company_element col-12" id="country" name="country" required>
+												<option value="">Country</option>
+												<?php foreach ($country_list as $coun) : ?>
+													<option value="<?php echo $coun->id; ?>"><?php echo $coun->name; ?></option>
+												<?php endforeach; ?>
+											</select>
+                  </div>
+                </div>-->
+				<div class="button-register" style="text-align:center">	
+                        <button type="submit" class="btn btn-primary " >Register</button>
+                </div>
+              </div>
+            </form>
+           
             
-                        </div>
-                                <div class="clearfix"></div>
-								
-								
-                                <div class="button-login">	
-                                    <button type="submit" class="btn btn-primary adminlogincheck" >Register</button>
-                                </div>
-                                <div class="clearfix"></div>
-								
-                                                          </fieldset>
-					
-                        </form>
-                        
-                       	
-                    </div><!--/span-->
-                </div><!--/row-->
-
-
-            </div><!--/.fluid-container-->
-
-        </div><!--/fluid-row-->
-       
-       <script src="<?php echo base_url()?>assets/admin/js/jquery-1.9.1.min.js"></script>
-        <script src="<?php echo base_url()?>assets/admin/js/jquery-migrate-1.0.0.min.js"></script>
-
-    </body>
-</html>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -80,7 +80,8 @@
 
                                 <label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
 							<div class="button-login">	
-								<a href="<?php echo base_url().'index.php/Registration/register'; ?>">Register</a>
+					
+                                <button type="submit" class="btn btn-primary adminlogincheck" formaction="<?php echo base_url().'Registration/register';?>">Register</button>
                                 </div>
 								
                                 <div class="button-login">	

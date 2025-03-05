@@ -79,13 +79,18 @@
                                 <div class="clearfix"></div>
 
                                 <label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
-
+							<div class="button-login">	
+					
+                                <button type="submit" class="btn btn-primary adminlogincheck" formaction="<?php echo base_url().'Registration/register';?>">Register</button>
+                                </div>
+								
                                 <div class="button-login">	
-                                    <button type="submit" class="btn btn-primary adminlogincheck">Admin Login</button>
+                                    <button type="submit" class="btn btn-primary adminlogincheck" >Admin Login</button>
                                 </div>
                                 <div class="clearfix"></div>
+								
                                                           </fieldset>
-  
+					
                         </form>
                         
                        	

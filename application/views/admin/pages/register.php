@@ -68,10 +68,13 @@
 												<?php endforeach; ?>
 											</select>
                   </div>
+
                 </div>
-                
+               
 				<div class="button-register" style="text-align:center">	
                         <button type="submit" class="btn btn-primary register" >Register</button>
+    
+				
                 </div>
               </div>
             </form>

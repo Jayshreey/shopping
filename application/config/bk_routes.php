@@ -53,27 +53,6 @@ $route['update/category/(:num)']      = 'category/update_category/$1';
 $route['published/category/(:num)']   = 'category/published_category/$1';
 $route['unpublished/category/(:num)'] = 'category/unpublished_category/$1';
 
-//Sub Category  Route List
-$route['add/sub_category']                = 'sub_category/add_sub_category';
-$route['manage/sub_category']             = 'sub_category/manage_sub_category';
-$route['save/sub_category']               = 'sub_category/save_sub_category';
-$route['delete/sub_category/(:num)']      = 'sub_category/delete_sub_category/$1';
-$route['edit/sub_category/(:num)']        = 'sub_category/edit_sub_category/$1';
-$route['update/sub_category/(:num)']      = 'sub_category/update_sub_category/$1';
-$route['published/sub_category/(:num)']   = 'sub_category/published_sub_category/$1';
-$route['unpublished/sub_category/(:num)'] = 'sub_category/unpublished_sub_category/$1';
-
-
-//Sub Sub Category  Route List
-$route['add/sub_sub_category']                = 'sub_sub_category/add_sub_sub_category';
-$route['manage/sub_sub_category']             = 'sub_sub_category/manage_sub_sub_category';
-$route['save/sub_sub_category']               = 'sub_sub_category/save_sub_sub_category';
-$route['delete/sub_sub_category/(:num)']      = 'sub_sub_category/delete_sub_sub_category/$1';
-$route['edit/sub_sub_category/(:num)']        = 'sub_sub_category/edit_sub_sub_category/$1';
-$route['update/sub_sub_category/(:num)']      = 'sub_sub_category/update_sub_sub_category/$1';
-$route['published/sub_sub_category/(:num)']   = 'sub_sub_category/published_sub_sub_category/$1';
-$route['unpublished/sub_sub_category/(:num)'] = 'sub_sub_category/unpublished_sub_sub_category/$1';
-
 //Brand  Route List
 $route['add/brand']                = 'brand/add_brand';
 $route['manage/brand']             = 'brand/manage_brand';
@@ -111,7 +90,6 @@ $route['unpublished/slider/(:num)'] = 'slider/unpublished_slider/$1';
 
 //Bank details Route list
 $route['manage/bank_details']			= 'Bankdetails/account_info';
-
 //Theme Option  Route List
 $route['theme/option'] = 'themeoption';
 $route['save/option']  = 'themeoption/save_option';

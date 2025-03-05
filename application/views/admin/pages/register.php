@@ -68,29 +68,13 @@
 												<?php endforeach; ?>
 											</select>
                   </div>
+
                 </div>
-				<!--<div class="col-6">
-                  <div class="form-floating mb-3">
-                   <select class="js-example-basic-single company_element" id="state" name="state" required>
-												<option value="">State</option>
-												<?php foreach ($state_list as $state) : ?>
-													<option value="<?php echo $state->id; ?>"><?php echo $state->name; ?></option>
-												<?php endforeach; ?>
-											</select>
-                  </div>
-                </div>
-				<div class="col-12">
-                  <div class="form-floating mb-3">
-                   <select class="js-example-basic-single company_element col-12" id="country" name="country" required>
-												<option value="">Country</option>
-												<?php foreach ($country_list as $coun) : ?>
-													<option value="<?php echo $coun->id; ?>"><?php echo $coun->name; ?></option>
-												<?php endforeach; ?>
-											</select>
-                  </div>
-                </div>-->
+               
 				<div class="button-register" style="text-align:center">	
-                        <button type="submit" class="btn btn-primary " >Register</button>
+                        <button type="submit" class="btn btn-primary register" >Register</button>
+    
+				
                 </div>
               </div>
             </form>

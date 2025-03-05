@@ -76,9 +76,11 @@
                             <div class="controls">
 								<select class="span6 typeahead" name="user_role" required>
 									<option>Select User role</option>
+
                                     <option value="1">Account</option>
                                     <option value="2">Sales</option>
 									<option value="3">Packaging</option>
+
                     </select>
                             </div>
                         </div>

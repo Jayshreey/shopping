@@ -110,8 +110,8 @@
                             <li><a href="<?php echo base_url('theme/option');?>"><i class="icon-align-justify"></i><span class="hidden-tablet"> Theme Option</span></a></li> -->
                             <li><a href="<?php echo base_url('manage/order');?>"><i class="icon-calendar"></i><span class="hidden-tablet"> Order</span></a></li>
                             <li><a href="<?php echo base_url('manage/payment')?>"><i class="icon-tasks"></i><span class="hidden-tablet"> Payment</span></a></li>
-                            <li><a href="<?php echo base_url('manage/bank_details')?>"><i class="icon-tasks"></i><span class="hidden-tablet"> Bank Details</span></a></li>
-                            <li><a href="<?php echo base_url('manage/employee')?>"><i class="icon-tasks"></i><span class="hidden-tablet"> User</span></a></li>
+                            <li><a href="<?php echo base_url('Bankdetails/account_info')?>"><i class="icon-tasks"></i><span class="hidden-tablet"> Bank Details</span></a></li>
+							<li><a href="<?php echo base_url('Userdetails/user_info')?>"><i class="icon-tasks"></i><span class="hidden-tablet"> User</span></a></li>
                         </ul>
                     </div>
                 </div>
